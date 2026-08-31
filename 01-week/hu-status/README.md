@@ -6,10 +6,8 @@
 
 <!-- CONFIG-START - must match your profile repo (username/username) CONFIG -->
 - FULL_NAME: DAVID FELIPE PERDOMO CASTILLO
-- GITHUB_USER: ElDavid499
-- TEAM: DAVID FELIPE PERDOMO CASTILLO / ANDY BRAHIAM YARA MEDINA
-- SPRINT_GOAL: Define and improve the initial design and documentation of GestionTurnosApp through the PDR, including its main functionalities, architecture, scope, and technical risks.
-<!-- CONFIG-END -->
+
+
 
 ## 1. User stories worked this week
 | HU ID | Title | Status (todo/doing/done) | Evidence (PR or commit URL) |
@@ -24,7 +22,11 @@
 - I reviewed and organized the proposed system architecture and its main technical components.
 - I contributed to identifying potential technical risks and considerations for the future development of the application.
 - I refined the PDR documentation so that it better represented the project's design and technical proposal.
+<<<<<<< Updated upstream
   
+=======
+
+>>>>>>> Stashed changes
 ## 3. Blockers and risks
 - The synchronization strategy between local and remote data still needs to be defined in greater detail.
 - The OfflineCacheManager may become complex if the remote business logic changes frequently.
