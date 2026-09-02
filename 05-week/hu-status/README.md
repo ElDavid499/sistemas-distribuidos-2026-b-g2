@@ -77,3 +77,26 @@
 * Containerized runtime: In progress
 * PR/commits: In progress
 
+  ## Relationship Between Week 05 and the Project Requirements
+
+Week 05 serves as a **guide and planning document** for preparing the runtime environment required to execute and validate MVP 1.
+
+The main purpose of this week is to define how the Appointment Service and its PostgreSQL database should be containerized using **Docker and Docker Compose**. It establishes the proposed Dockerfile, `.dockerignore`, environment-based configuration, service networking, and persistent database storage.
+
+The activities in Week 05 should be understood as a **roadmap for implementation and validation**. They describe the steps required to create a reproducible containerized environment for the MVP 1 Appointment Service.
+
+The work includes:
+
+* Defining the Docker containerization strategy.
+* Planning a multi-stage Dockerfile.
+* Defining a `.dockerignore` file.
+* Configuring environment variables without exposing secrets.
+* Defining Docker Compose for the Appointment Service and PostgreSQL.
+* Configuring communication between containers through service names.
+* Configuring persistent PostgreSQL storage using Docker volumes.
+* Preparing the containerized runtime environment for MVP 1.
+* Validating the service against a real database.
+
+Therefore, Week 05 is used as a **technical guide to support the implementation, execution, and validation of MVP 1**, rather than as a statement that every planned Docker and infrastructure activity has already been completed.
+
+
