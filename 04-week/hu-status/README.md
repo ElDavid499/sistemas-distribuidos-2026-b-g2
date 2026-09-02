@@ -77,3 +77,25 @@
 - Walking skeleton: Pending
 - Pull requests/commits: Pending
 
+## Relationship Between Week 04 and the Project Requirements
+
+Week 04 serves as a **guide and planning document** to help the team meet the technical requirements of GestionTurnosApp.
+
+The main purpose of this week is to define how the **Appointment Service** should be structured using DDD and Hexagonal Architecture. It establishes the proposed domain, application layer, ports, adapters, persistence boundary, dependency injection flow, API endpoints, and the MVP 1 vertical slice.
+
+The activities in Week 04 should be understood as a **roadmap for implementation and validation**. They describe what needs to be developed and verified to progressively fulfill the project requirements.
+
+The work includes:
+
+* Defining the Appointment Service structure.
+* Separating domain, application, inbound adapters, and outbound adapters.
+* Defining the `Turno` aggregate and its business rules.
+* Defining the `AppointmentRepository` port.
+* Planning the application use cases.
+* Defining the API endpoints and acceptance criteria.
+* Planning the walking skeleton with a real database.
+* Organizing the MVP 1 sprint backlog.
+
+Therefore, Week 04 is used as a **technical guide to move from the project design toward the implementation of MVP 1**, rather than as a statement that all planned implementation activities have already been completed.
+
+
