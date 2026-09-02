@@ -63,9 +63,6 @@
 ## 6. Evidence links
 * https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2.git
 * https://github.com/code-corhuila/appt-mgmt-docs.git
-
-
-* PDR: `TBD`
 * Week 3 Session 1 deliverable: `TBD`
 * Week 3 Session 2 deliverable: `TBD`
 * Appointment Service design: `TBD`
