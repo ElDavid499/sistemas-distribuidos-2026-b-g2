@@ -22,11 +22,11 @@ groups:
         labels:
           severity: critical
           service: appointments-service
-          team: salud-activa-grupo-2
+          team: David Felipe Perdomo Castillo / Andy Brahiam Yara Medina / Sebastian Bermudez
         annotations:
           summary: "Appointment API availability budget is burning rapidly"
           description: "5xx ratio exceeds 14.4x the 99.9% SLO error allowance with minimum traffic in both windows."
-          runbook_url: "https://github.com/BrayanYara1/ProyectoDistribuidos2026/blob/main/11-week/workshop/07-runbook.md#alert-http-5xx-or-fast-availability-burn"
+          runbook_url: "https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/11-week/workshop/07-runbook.md"
 
       - alert: AppointmentAvailabilitySustainedBurn
         expr: |
@@ -49,11 +49,11 @@ groups:
         labels:
           severity: warning
           service: appointments-service
-          team: salud-activa-grupo-2
+          team: David Felipe Perdomo Castillo / Andy Brahiam Yara Medina / Sebastian Bermudez
         annotations:
           summary: "Appointment API availability budget is burning persistently"
           description: "5xx ratio exceeds 6x the 99.9% SLO error allowance with minimum traffic in both windows."
-          runbook_url: "https://github.com/BrayanYara1/ProyectoDistribuidos2026/blob/main/11-week/workshop/07-runbook.md#alert-http-5xx-or-fast-availability-burn"
+          runbook_url: "https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/11-week/workshop/07-runbook.md"
 
       - alert: AppointmentLatencyFastBurn
         expr: |
@@ -82,11 +82,11 @@ groups:
         labels:
           severity: critical
           service: appointments-service
-          team: salud-activa-grupo-2
+          team: David Felipe Perdomo Castillo / Andy Brahiam Yara Medina / Sebastian Bermudez
         annotations:
           summary: "Appointment API latency budget is burning rapidly"
           description: "More than 72% of requests exceed 300 ms in both windows, with minimum traffic."
-          runbook_url: "https://github.com/BrayanYara1/ProyectoDistribuidos2026/blob/main/11-week/workshop/07-runbook.md#alert-slow-booking-requests"
+          runbook_url: "https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/11-week/workshop/07-runbook.md"
 
       - alert: AppointmentLatencySustainedBurn
         expr: |
@@ -115,11 +115,11 @@ groups:
         labels:
           severity: warning
           service: appointments-service
-          team: salud-activa-grupo-2
+          team: David Felipe Perdomo Castillo / Andy Brahiam Yara Medina / Sebastian Bermudez
         annotations:
           summary: "Appointment API latency budget is burning persistently"
           description: "More than 30% of requests exceed 300 ms in both windows, with minimum traffic."
-          runbook_url: "https://github.com/BrayanYara1/ProyectoDistribuidos2026/blob/main/11-week/workshop/07-runbook.md#alert-slow-booking-requests"
+          runbook_url: "https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/11-week/workshop/07-runbook.md"
 
       - alert: AuthReservationFastBurn
         expr: |
@@ -148,11 +148,11 @@ groups:
         labels:
           severity: critical
           service: appointments-service
-          team: salud-activa-grupo-2
+          team: David Felipe Perdomo Castillo / Andy Brahiam Yara Medina / Sebastian Bermudez
         annotations:
           summary: "Auth reservation latency is rapidly consuming its SLO budget"
           description: "More than 14.4% of reserve attempts fail or exceed 1 second in both windows."
-          runbook_url: "https://github.com/BrayanYara1/ProyectoDistribuidos2026/blob/main/11-week/workshop/07-runbook.md#alert-slow-auth-reservations"
+          runbook_url: "https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/11-week/workshop/07-runbook.md"
 
       - alert: AuthReservationSustainedBurn
         expr: |
@@ -181,8 +181,8 @@ groups:
         labels:
           severity: warning
           service: appointments-service
-          team: salud-activa-grupo-2
+          team: David Felipe Perdomo Castillo / Andy Brahiam Yara Medina / Sebastian Bermudez
         annotations:
           summary: "Auth reservation latency is persistently consuming its SLO budget"
           description: "More than 6% of reserve attempts fail or exceed 1 second in both windows."
-          runbook_url: "https://github.com/BrayanYara1/ProyectoDistribuidos2026/blob/main/11-week/workshop/07-runbook.md#alert-slow-auth-reservations"
+          runbook_url: "https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/11-week/workshop/07-runbook.md"
