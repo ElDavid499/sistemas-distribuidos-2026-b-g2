@@ -1,0 +1,188 @@
+groups:
+  - name: salud_activa_booking_slo
+    rules:
+      - alert: AppointmentAvailabilityFastBurn
+        expr: |
+          (
+            sum(rate(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos",status_code=~"5.."}[5m]))
+            /
+            sum(rate(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos"}[5m]))
+          ) > 0.0144
+          and
+          sum(increase(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos"}[5m])) >= 10
+          and
+          (
+            sum(rate(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos",status_code=~"5.."}[1h]))
+            /
+            sum(rate(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos"}[1h]))
+          ) > 0.0144
+          and
+          sum(increase(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos"}[1h])) >= 50
+        for: 5m
+        labels:
+          severity: critical
+          service: appointments-service
+          team: salud-activa-grupo-2
+        annotations:
+          summary: "Appointment API availability budget is burning rapidly"
+          description: "5xx ratio exceeds 14.4x the 99.9% SLO error allowance with minimum traffic in both windows."
+          runbook_url: "https://github.com/BrayanYara1/ProyectoDistribuidos2026/blob/main/11-week/workshop/07-runbook.md#alert-http-5xx-or-fast-availability-burn"
+
+      - alert: AppointmentAvailabilitySustainedBurn
+        expr: |
+          (
+            sum(rate(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos",status_code=~"5.."}[30m]))
+            /
+            sum(rate(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos"}[30m]))
+          ) > 0.006
+          and
+          sum(increase(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos"}[30m])) >= 50
+          and
+          (
+            sum(rate(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos",status_code=~"5.."}[6h]))
+            /
+            sum(rate(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos"}[6h]))
+          ) > 0.006
+          and
+          sum(increase(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos"}[6h])) >= 200
+        for: 30m
+        labels:
+          severity: warning
+          service: appointments-service
+          team: salud-activa-grupo-2
+        annotations:
+          summary: "Appointment API availability budget is burning persistently"
+          description: "5xx ratio exceeds 6x the 99.9% SLO error allowance with minimum traffic in both windows."
+          runbook_url: "https://github.com/BrayanYara1/ProyectoDistribuidos2026/blob/main/11-week/workshop/07-runbook.md#alert-http-5xx-or-fast-availability-burn"
+
+      - alert: AppointmentLatencyFastBurn
+        expr: |
+          (
+            1 -
+            (
+              sum(rate(salud_activa_http_request_duration_seconds_bucket{service="appointments-service",method="POST",route="/api/turnos",le="0.3"}[5m]))
+              /
+              sum(rate(salud_activa_http_request_duration_seconds_count{service="appointments-service",method="POST",route="/api/turnos"}[5m]))
+            )
+          ) > 0.72
+          and
+          sum(increase(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos"}[5m])) >= 10
+          and
+          (
+            1 -
+            (
+              sum(rate(salud_activa_http_request_duration_seconds_bucket{service="appointments-service",method="POST",route="/api/turnos",le="0.3"}[1h]))
+              /
+              sum(rate(salud_activa_http_request_duration_seconds_count{service="appointments-service",method="POST",route="/api/turnos"}[1h]))
+            )
+          ) > 0.72
+          and
+          sum(increase(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos"}[1h])) >= 50
+        for: 5m
+        labels:
+          severity: critical
+          service: appointments-service
+          team: salud-activa-grupo-2
+        annotations:
+          summary: "Appointment API latency budget is burning rapidly"
+          description: "More than 72% of requests exceed 300 ms in both windows, with minimum traffic."
+          runbook_url: "https://github.com/BrayanYara1/ProyectoDistribuidos2026/blob/main/11-week/workshop/07-runbook.md#alert-slow-booking-requests"
+
+      - alert: AppointmentLatencySustainedBurn
+        expr: |
+          (
+            1 -
+            (
+              sum(rate(salud_activa_http_request_duration_seconds_bucket{service="appointments-service",method="POST",route="/api/turnos",le="0.3"}[30m]))
+              /
+              sum(rate(salud_activa_http_request_duration_seconds_count{service="appointments-service",method="POST",route="/api/turnos"}[30m]))
+            )
+          ) > 0.30
+          and
+          sum(increase(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos"}[30m])) >= 50
+          and
+          (
+            1 -
+            (
+              sum(rate(salud_activa_http_request_duration_seconds_bucket{service="appointments-service",method="POST",route="/api/turnos",le="0.3"}[6h]))
+              /
+              sum(rate(salud_activa_http_request_duration_seconds_count{service="appointments-service",method="POST",route="/api/turnos"}[6h]))
+            )
+          ) > 0.30
+          and
+          sum(increase(salud_activa_http_requests_total{service="appointments-service",method="POST",route="/api/turnos"}[6h])) >= 200
+        for: 30m
+        labels:
+          severity: warning
+          service: appointments-service
+          team: salud-activa-grupo-2
+        annotations:
+          summary: "Appointment API latency budget is burning persistently"
+          description: "More than 30% of requests exceed 300 ms in both windows, with minimum traffic."
+          runbook_url: "https://github.com/BrayanYara1/ProyectoDistribuidos2026/blob/main/11-week/workshop/07-runbook.md#alert-slow-booking-requests"
+
+      - alert: AuthReservationFastBurn
+        expr: |
+          (
+            1 -
+            (
+              sum(rate(salud_activa_dependency_request_duration_seconds_bucket{dependency="auth-service",operation="reserve",outcome="success",le="1"}[5m]))
+              /
+              sum(rate(salud_activa_dependency_request_duration_seconds_count{dependency="auth-service",operation="reserve"}[5m]))
+            )
+          ) > 0.144
+          and
+          sum(increase(salud_activa_dependency_request_duration_seconds_count{dependency="auth-service",operation="reserve"}[5m])) >= 10
+          and
+          (
+            1 -
+            (
+              sum(rate(salud_activa_dependency_request_duration_seconds_bucket{dependency="auth-service",operation="reserve",outcome="success",le="1"}[1h]))
+              /
+              sum(rate(salud_activa_dependency_request_duration_seconds_count{dependency="auth-service",operation="reserve"}[1h]))
+            )
+          ) > 0.144
+          and
+          sum(increase(salud_activa_dependency_request_duration_seconds_count{dependency="auth-service",operation="reserve"}[1h])) >= 50
+        for: 5m
+        labels:
+          severity: critical
+          service: appointments-service
+          team: salud-activa-grupo-2
+        annotations:
+          summary: "Auth reservation latency is rapidly consuming its SLO budget"
+          description: "More than 14.4% of reserve attempts fail or exceed 1 second in both windows."
+          runbook_url: "https://github.com/BrayanYara1/ProyectoDistribuidos2026/blob/main/11-week/workshop/07-runbook.md#alert-slow-auth-reservations"
+
+      - alert: AuthReservationSustainedBurn
+        expr: |
+          (
+            1 -
+            (
+              sum(rate(salud_activa_dependency_request_duration_seconds_bucket{dependency="auth-service",operation="reserve",outcome="success",le="1"}[30m]))
+              /
+              sum(rate(salud_activa_dependency_request_duration_seconds_count{dependency="auth-service",operation="reserve"}[30m]))
+            )
+          ) > 0.06
+          and
+          sum(increase(salud_activa_dependency_request_duration_seconds_count{dependency="auth-service",operation="reserve"}[30m])) >= 50
+          and
+          (
+            1 -
+            (
+              sum(rate(salud_activa_dependency_request_duration_seconds_bucket{dependency="auth-service",operation="reserve",outcome="success",le="1"}[6h]))
+              /
+              sum(rate(salud_activa_dependency_request_duration_seconds_count{dependency="auth-service",operation="reserve"}[6h]))
+            )
+          ) > 0.06
+          and
+          sum(increase(salud_activa_dependency_request_duration_seconds_count{dependency="auth-service",operation="reserve"}[6h])) >= 200
+        for: 30m
+        labels:
+          severity: warning
+          service: appointments-service
+          team: salud-activa-grupo-2
+        annotations:
+          summary: "Auth reservation latency is persistently consuming its SLO budget"
+          description: "More than 6% of reserve attempts fail or exceed 1 second in both windows."
+          runbook_url: "https://github.com/BrayanYara1/ProyectoDistribuidos2026/blob/main/11-week/workshop/07-runbook.md#alert-slow-auth-reservations"
