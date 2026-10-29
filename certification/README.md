@@ -19,10 +19,9 @@
 ## Study log
 
 | Date | Hours | Chapters or labs | Evidence file |
-|---|---|---|---|
-| 2026-10-28 | 2 | Course enrollment, preparatory materials, and Chapters 1-6 | |
-| Total | 2 | | |
-
+|---|---:|---|---|
+| 2026-10-28 | 2 | Course enrollment, preparatory materials, and Chapters 1-6 | [00-enrollment.png](https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/certification/evidence/00-enrollment.png), [01-chapter 01.png](https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/certification/evidence/01-chapter%2001.png), [02-chapter 02.png](https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/certification/evidence/02-chapter%2002.png), [03-chapter 03.png](https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/certification/evidence/03-chapter%2003.png), [04-chapter 04.png](https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/certification/evidence/04-chapter%2004.png), [05-chapter 05.png](https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/certification/evidence/05-chapter%2005.png), [06-chapter 06.png](https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/certification/evidence/06-chapter%2006.png) |
+| **Total** | **2** | |  |
 ## Labs
 
 | Evidence file | Lab name | What I built | What failed first and how I fixed it |
