@@ -8,6 +8,10 @@
 - REFLECTION_DOC: REFLECTION_DOC_URL
 - LIBRARY_BOOK: Nils J. Nilsson, Inteligencia artificial: una nueva síntesis, Primera edición en español, 2001, 006.3 N347
 - LIBRARY_RECORD_TIME: 08:47
+- STORIES:
+https://github.com/code-corhuila/appt-mgmt-docs/issues/27
+https://github.com/code-corhuila/appt-mgmt-docs/issues/28
+https://github.com/code-corhuila/appt-mgmt-docs/issues/29
 <!-- CONFIG-END -->
 
 
