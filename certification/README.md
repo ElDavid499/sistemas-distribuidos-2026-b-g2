@@ -1,4 +1,4 @@
-# Certification C3 — <Full name>
+# Certification C3 — David Felipe Perdomo Castillo 
 
 > Template of the corte 3 certification. Replace every `<...>` with your data and delete this note. The rules are in the guide attached to the c3-certification activity in Moodle. Text left as `<...>` counts as missing.
 
@@ -6,22 +6,22 @@
 
 | Field | Value |
 |---|---|
-| Full name | <Full name exactly as in Moodle> |
-| GitHub user | <github-user> |
-| Group | <G1 or G2> |
-| Team | <Team name> |
-| Team -docs repository | <https://github.com/code-corhuila/...-docs> |
-| Course | <Exact course name> |
-| Course link | <Course URL> |
-| Start date | <YYYY-MM-DD> |
+| Full name | David Felipe Perdomo Castillo |
+| GitHub user | ElDavid499 |
+| Group | G2 |
+| Team | Appointment-Management |
+| Team -docs repository | https://github.com/code-corhuila/appt-mgmt-docs.git |
+| Course | HCCDP-Solution Architecures Course |
+| Course link | https://e.huawei.com/en/talent/ict-academy/#/ict-courses-detail?courseId=6WtKiPd1S1YelBB0AUbE1vXlPgk |
+| Start date | 2026-10-28 |
 | Completion date | <YYYY-MM-DD> |
 
 ## Study log
 
 | Date | Hours | Chapters or labs | Evidence file |
 |---|---|---|---|
-| <YYYY-MM-DD> | <h> | <Chapters or labs> | <evidence/NN-....png> |
-| Total | <sum> | | |
+| 2026-10-28 | 2 | Course enrollment, preparatory materials, and Chapters 1-6 | <evidence/NN-....png> |
+| Total | 2 | | |
 
 ## Labs
 
