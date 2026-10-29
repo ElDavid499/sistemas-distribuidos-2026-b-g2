@@ -10,7 +10,9 @@
 - LIBRARY_RECORD_TIME: 08:47
 - STORIES:
 https://github.com/code-corhuila/appt-mgmt-docs/issues/27
+
 https://github.com/code-corhuila/appt-mgmt-docs/issues/28
+
 https://github.com/code-corhuila/appt-mgmt-docs/issues/29
 <!-- CONFIG-END -->
 
