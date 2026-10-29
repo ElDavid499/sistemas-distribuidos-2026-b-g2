@@ -20,7 +20,13 @@
 
 | Date | Hours | Chapters or labs | Evidence file |
 |---|---|---|---|
-| 2026-10-28 | 2 | Course enrollment, preparatory materials, and Chapters 1-6 | <evidence/NN-....png> |
+| 2026-10-28 | 2 | Course enrollment, preparatory materials, and Chapters 1-6 | - https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/certification/evidence/00-enrollment.png
+- https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/certification/evidence/01-chapter%2001.png
+- https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/certification/evidence/02-chapter%2002.png
+- https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/certification/evidence/03-chapter%2003.png
+- https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/certification/evidence/04-chapter%2004.png
+- https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/certification/evidence/05-chapter%2005.png
+- https://github.com/ElDavid499/sistemas-distribuidos-2026-b-g2/blob/main/certification/evidence/06-chapter%2006.png|
 | Total | 2 | | |
 
 ## Labs
