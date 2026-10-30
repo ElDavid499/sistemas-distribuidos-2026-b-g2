@@ -8,12 +8,10 @@
 - REFLECTION_DOC: https://docs.google.com/document/d/1_Bk9jMd40fX6uFHSg6zFfY0_bFPTllHcq15XBc0rZng/edit?usp=sharing
 - LIBRARY_BOOK: Nils J. Nilsson, Inteligencia artificial: una nueva síntesis, Primera edición en español, 2001, 006.3 N347
 - LIBRARY_RECORD_TIME: 08:47
-- STORIES:
-https://github.com/code-corhuila/appt-mgmt-docs/issues/27
-
-https://github.com/code-corhuila/appt-mgmt-docs/issues/28
-
-https://github.com/code-corhuila/appt-mgmt-docs/issues/29
+-  STORIES:
+   https://github.com/code-corhuila/appt-mgmt-docs/issues/27 (E, risk 9, P0)
+   https://github.com/code-corhuila/appt-mgmt-docs/issues/28 (I, risk 6, P1)
+   https://github.com/code-corhuila/appt-mgmt-docs/issues/29 (T, risk 6, P1)
 <!-- CONFIG-END -->
 
 
