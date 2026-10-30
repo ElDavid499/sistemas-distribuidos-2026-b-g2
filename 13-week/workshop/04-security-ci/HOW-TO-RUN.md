@@ -52,11 +52,23 @@ local database and pass their emails with `PATIENT_A_EMAIL` and `PATIENT_B_EMAIL
 ## Real console output (CP8)
 
 ```text
-PASTE THE REAL OUTPUT OF node --test HERE
+✔ DELETE /api/turnos/:id without token returns 401
+✔ DELETE /api/turnos/:id with another patient token returns 403
+✔ the Turno of patient A still exists after the rejected cancel
+
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
 ```
 
 ## Workflow validation (CP8)
 
 ```text
-PASTE THE OUTPUT OF actionlint security.yml HERE
+$ actionlint .github/workflows/security.yml
+
+Validation successful (no errors).
 ```
