@@ -22,11 +22,10 @@
 |---|---:|---|---|
 | 2026-10-28 | 2 | Course enrollment, preparatory materials, and Chapters 1-6 | [00-enrollment.png](evidence/00-enrollment.png) |
 | **Total** | **2** | | |
-|---|---|---|---|
-| 2026-10-28 | 2 | Course enrollment, preparatory materials, and Chapters 1-6 | [00-enrollment.png](evidence/00-enrollment.png)<br>[01-chapter 01.png](<evidence/01-chapter 01.png>)<br>[02-chapter 02.png](<evidence/02-chapter 02.png>)<br>[03-chapter 03.png](<evidence/03-chapter 03.png>)<br>[04-chapter 04.png](<evidence/04-chapter 04.png>)<br>[05-chapter 05.png](<evidence/05-chapter 05.png>)<br>[06-chapter 06.png](<evidence/06-chapter 06.png>) |
-| Total | 2 | | |
 
->>>>>>> 775087d (docs: save certification changes)
+
+
+
 ## Labs
 
 | Evidence file | Lab name | What I built | What failed first and how I fixed it |
