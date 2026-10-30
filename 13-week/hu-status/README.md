@@ -55,3 +55,4 @@
 - **STRIDE Pull Request:** [PR #30](https://github.com/code-corhuila/appt-mgmt-docs/pull/30)
 - **Review comment on a teammate PR:** [PR #22](https://github.com/code-corhuila/appt-mgmt-docs/pull/22)
 - **Reflection document:** [Google Docs](https://docs.google.com/document/d/1_Bk9jMd40fX6uFHSg6zFfY0_bFPTllHcq15XBc0rZng/edit?usp=sharing)
+- **Reflection Document Changes:** https://docs.google.com/document/d/1_Bk9jMd40fX6uFHSg6zFfY0_bFPTllHcq15XBc0rZng/edit?usp=sharing
