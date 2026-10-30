@@ -24,15 +24,21 @@
 
 ## 2. My individual contribution
 
-- (Write here, in your own words, what you did: STRIDE table for TB1, the 3 security issues, the CI workflow and the negative test, and the review you answered.)
+- I modeled the trust boundary TB1 (patient clients -> /api/turnos) with STRIDE and opened the Pull Request #30 in the team docs repository.
+- I created three security issues (#27 E, #28 I, #29 T) with acceptance criteria and priority labels.
+- I wrote a security workflow (gitleaks, npm audit, authorization test) and a negative test for DELETE /api/turnos/:id in my fork.
+- I answered the review comment on my STRIDE table and reviewed a teammate's Pull Request (#22).
 
 ## 3. Blockers and risks
 
-- (Write here what blocked you, for example, running the backend locally for the negative test.)
+- I needed to run the backend and MongoDB locally to execute the negative test.
+- A reviewer found a threat I did not see (the response of /api/turnos exposes internal fields), so I had to update my table.
+- The library book I registered is not about security, so it supports few rows of my table.
 
 ## 4. Plan for next week
 
-- (Write here what you will implement first.)
+- First, add the ownership check in DELETE /api/turnos/:id (return 403) and make the negative test pass.
+- Then return only the needed fields in the Turno response and add a unique index for doctor, date and time.
 
 ## 5. Compliance self-check
 
