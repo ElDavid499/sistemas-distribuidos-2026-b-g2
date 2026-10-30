@@ -5,7 +5,7 @@
 - DOCS_REPO: https://github.com/code-corhuila/appt-mgmt-docs
 - BOUNDARY: TB1 — Patient clients (Android app / web portal) -> Salud Activa backend `/api/turnos` (inbound)
 - CLAIM_ISSUE: https://github.com/code-corhuila/appt-mgmt-docs/issues/26
-- REFLECTION_DOC: REFLECTION_DOC_URL
+- REFLECTION_DOC: https://docs.google.com/document/d/1_Bk9jMd40fX6uFHSg6zFfY0_bFPTllHcq15XBc0rZng/edit?usp=sharing
 - LIBRARY_BOOK: Nils J. Nilsson, Inteligencia artificial: una nueva síntesis, Primera edición en español, 2001, 006.3 N347
 - LIBRARY_RECORD_TIME: 08:47
 - STORIES:
