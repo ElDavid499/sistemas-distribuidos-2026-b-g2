@@ -12,7 +12,7 @@ The workflow is a proposal for the team backend repository. In that repository i
 
 ## Story and criteria covered
 
-- Story: **[security] Only the owner can cancel an appointment (Turno)** — ISSUE_URL_P0
+- Story: **[security] Only the owner can cancel an appointment (Turno)** — https://github.com/code-corhuila/appt-mgmt-docs/issues/27
 - Criterion 1: another patient's token on `DELETE /api/turnos/:id` returns `403` and the `Turno` stays.
 - Criterion 2: no token returns `401`.
 - Threat: E (Elevation of privilege), risk 9, in `stride-ElDavid499.md`.
