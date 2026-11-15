@@ -13,9 +13,9 @@
 
 | **HU ID** | **Title** | **Status (todo/doing/done)** | **Evidence (PR or commit URL)** |
 | ---------- | --------- | ---------------------------- | ------------------------------- |
-| HU-001 | Integrate automated validation and testing into backend service pipelines | todo | In progress |
-| HU-002 |  Validate frontend build and quality checks through CI/CD | todo | In progress  |
-| HU-003 |  Define branch protection, release gates, and artifact promotion | In progress  |
+| HU-001 | Backend: Integrate automated validation and testing into backend service pipelines | todo | In progress|
+| HU-002 | Frontend: Validate frontend build and quality checks through CI/CD | todo | In progress |
+| HU-003 | Project delivery: Define branch protection, release gates, and artifact promotion | todo | In progress |
 
 ## 2. My individual contribution
 
