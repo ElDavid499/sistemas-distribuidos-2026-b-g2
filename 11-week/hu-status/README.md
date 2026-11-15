@@ -13,9 +13,9 @@
 
 | **HU ID** | **Title** | **Status (todo/doing/done)** | **Evidence (PR or commit URL)** |
 | ---------- | --------- | ---------------------------- | ------------------------------- |
-| HU-001 | Backend: Review and improve observability across backend services | todo | Pending |
-| HU-002 | Frontend: Review application monitoring and error visibility | todo | Pending |
-| HU-003 | Project delivery: Complete the observability workshop and document its evidence | todo | Pending |
+| HU-001 | Backend: Review and improve observability across backend services | todo | In progress |
+| HU-002 | Frontend: Review application monitoring and error visibility | todo | In progress  |
+| HU-003 | Project delivery: Complete the observability workshop and document its evidence | todo | In progress  |
 
 ## 2. My individual contribution
 
